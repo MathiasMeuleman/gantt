@@ -55,7 +55,8 @@ export default function Gantt(element, tasks, config = {}) {
 			padding: 18,
 			view_mode: 'Day',
 			date_format: 'YYYY-MM-DD',
-			custom_popup_html: null
+			custom_popup_html: null,
+			enable_edit: true
 		};
 		self.config = merge(defaults, config);
 

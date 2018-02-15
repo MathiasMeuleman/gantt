@@ -133,9 +133,11 @@ export default function Bar(gt, task) {
 		if (self.invalid) return;
 		setup_click_event();
 		show_details();
-		bind_resize();
-		bind_drag();
-		bind_resize_progress();
+		if (gt.config.enable_edit) {
+			bind_resize();
+			bind_drag();
+			bind_resize_progress();
+		}
 	}
 
 	function show_details() {
